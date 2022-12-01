@@ -1,0 +1,11 @@
+<div>
+    <span>姓名： {{name}}</span>
+    <span>年龄： {{age>=18 ? '成年' : '未成年'}}</span><br>
+    <span>在法定工作年龄：{{age>=18 && age<60}}</span><br>
+    <span>用户名大写{{name.toUpperCase()}}</span>
+    <div>坐标： {{name[2]}}</div>
+    <span [title]="name">title</span><br>
+    <span title="{{name}}">Vue</span>
+    <hr>
+    <button (click)="printName()" [title]="'测试'+name">测试</button>
+</div>

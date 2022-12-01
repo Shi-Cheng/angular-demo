@@ -1,0 +1,21 @@
+<p>view-parent works!</p>
+<!-- <ng-container>this is ng-content</ng-container> -->
+
+<ng-template #domLabelChild let-data="data">
+    <div>123 {{data}}</div>
+</ng-template>
+<!-- <div *ngIf="isValid; then a1 else a2">这里的内容会被忽略</div>
+<ng-template #a1>这是THEN内容</ng-template>
+<ng-template #a2>这是ELSE内容</ng-template> -->
+
+<!-- <ng-template #domLabelChild>
+    <app-view-child></app-view-child>
+</ng-template> -->
+
+<!-- <div *ngFor="let hero of heroes; let i=index; let odd=odd;" [class.odd]="odd">
+    ({{i}}) {{hero.name}}
+  </div>
+  
+<ng-template ngFor let-hero [ngForOf]="heroes" let-i="index" let-odd="odd">
+    <div [class.odd]="odd">({{i}}) {{hero.name}}</div>
+</ng-template> -->
