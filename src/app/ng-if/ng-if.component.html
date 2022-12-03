@@ -1,0 +1,17 @@
+<p>ng-if works!</p>
+<span *ngIf="hasMore; else noMore" (click)="loadMOre()">Has more</span>
+
+<ng-template #noMore>
+    <span (click)="showMore()">no more</span>
+</ng-template>
+
+<div [ngStyle]="ngStyleTest">ng style test</div>
+
+<button [ngClass]="ngClassObg" (click)="loadMore2()">test</button>
+
+<div [ngSwitch]="level">
+    <span *ngSwitchCase="c00">c00</span>
+    <span *ngSwitchCase="c01">c01</span>
+    <span *ngSwitchCase="c02">c02</span>
+    <span *ngSwitchDefault>default</span>
+</div>

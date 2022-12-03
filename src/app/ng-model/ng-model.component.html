@@ -1,0 +1,18 @@
+<p>ng-model works!</p>
+
+<!--angular 监听数据改变事件 ngModelChange -->
+<input [(ngModel)]="inputValue" placeholder=""  (ngModelChange)="handleNameChange()"/><br/>
+<span>{{msg}}</span>
+
+<hr>
+<div id="id1" appPrecticeDirective>
+    this is a html for directive
+</div>
+
+<div id="id2">
+    this is a html for directive
+</div>
+
+<div id="id3" appPrecticeDirective>
+    this is a html for directive
+</div>

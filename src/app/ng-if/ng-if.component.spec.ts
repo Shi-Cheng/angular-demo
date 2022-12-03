@@ -1,19 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewChildComponent } from './view-child.component';
+import { NgIfComponent } from './ng-if.component';
 
-describe('ViewChildComponent', () => {
-  let component: ViewChildComponent;
-  let fixture: ComponentFixture<ViewChildComponent>;
+describe('NgIfComponent', () => {
+  let component: NgIfComponent;
+  let fixture: ComponentFixture<NgIfComponent>;
 
   beforeEach(async () => {
-    
     await TestBed.configureTestingModule({
-      declarations: [ ViewChildComponent ]
+      declarations: [ NgIfComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ViewChildComponent);
+    fixture = TestBed.createComponent(NgIfComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
