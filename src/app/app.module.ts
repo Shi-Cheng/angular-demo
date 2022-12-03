@@ -14,6 +14,7 @@ import { NgModelComponent } from './ng-model/ng-model.component';
 import { PrecticeDirectiveDirective } from './prectice-directive.directive';
 import { TodolistComponent } from './todolist/todolist.component';
 import { AgePipe } from './todolist/age.pipe';
+import { ArmyPipe } from './view-parent/arm.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AgePipe } from './todolist/age.pipe';
     NgModelComponent,
     PrecticeDirectiveDirective,
     TodolistComponent,
-    AgePipe
+    AgePipe,
+    ArmyPipe
   ],
   imports: [
     BrowserModule,

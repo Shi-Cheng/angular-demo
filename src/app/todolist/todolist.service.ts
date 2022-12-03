@@ -5,6 +5,13 @@ class Employ {
     address: String
 }
 
+class ArmyObject {
+    id: Number
+    name: String
+    type: String
+}
+
 export {
-    Employ
+    Employ,
+    ArmyObject
 }
