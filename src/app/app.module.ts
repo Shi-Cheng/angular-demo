@@ -14,7 +14,13 @@ import { NgModelComponent } from './ng-model/ng-model.component';
 import { PrecticeDirectiveDirective } from './prectice-directive.directive';
 import { TodolistComponent } from './todolist/todolist.component';
 import { AgePipe } from './todolist/age.pipe';
-import { ArmyPipe } from './view-parent/arm.pipe';
+import { ArmyPipe } from './todolist/arm.pipe';
+import { HttpClientModule } from '@angular/common/http';
+import { Myc05Component } from './myc05/myc05.component';
+import { BlogHeaderComponent } from './blog/blog-header/blog-header.component';
+import { BlogContentComponent } from './blog/blog-content/blog-content.component';
+import { BlogFooterComponent } from './blog/blog-footer/blog-footer.component';
+import { BlogComponent } from './blog/blog.component'
 
 @NgModule({
   declarations: [
@@ -30,12 +36,18 @@ import { ArmyPipe } from './view-parent/arm.pipe';
     PrecticeDirectiveDirective,
     TodolistComponent,
     AgePipe,
-    ArmyPipe
+    ArmyPipe,
+    Myc05Component,
+    BlogHeaderComponent,
+    BlogContentComponent,
+    BlogFooterComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
